@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+    <title>CareerCatalyst Africa</title>
+</head>
+
+<body>
+    <!-- Registration Form  -->
+    <div class="reg-form">
+        <div class="reg-container">
+
+            <!-- Registration Header & Close Button -->
+            <div class="reg-header-div">
+                <header>Registration
+                    <a onclick="hideReg()" class="reg-close-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                                fill="#13293d" />
+                        </svg></a>
+                </header>
+            </div>
+
+            <!-- Registration Form -->
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <Input type="text" placeholder="Enter your name" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <Input type="date" placeholder="Enter your name" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Email</label>
+                                <Input type="text" placeholder="Enter your name" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <Input type="number" placeholder="Enter mobile number" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <Input type="date" placeholder="Gender" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Nationality</label>
+                                <Input type="text" placeholder="Enter your Nationality" required></Input>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details ID">
+                        <span class="title">Professional Information</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Current Job Title</label>
+                                <Input type="text" placeholder="Enter your current Job Title" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Current Company/Organization</label>
+                                <Input type="text" placeholder="Enter your current company/organization"
+                                    required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Years of Experience</label>
+                                <Input type="number" placeholder="Enter your years of experience" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Industry</label>
+                                <Input type="text" placeholder="Industry" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Highest Education Level</label>
+                                <Input type="text" placeholder="Level of Education" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Area of Expertise</label>
+                                <Input type="text" placeholder="Enter your specialization" required></Input>
+                            </div>
+
+                            <!-- Next button -->
+                            <button class="nextBtn">
+                                <span class="btnText">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form second">
+                    <div class="details personal">
+                        <span class="title">Career Goals</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Short-term Career Goals</label>
+                                <Input type="text" placeholder="" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Long-term Career Goals</label>
+                                <Input type="text" placeholder="" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>CV/Resume</label>
+                                <Input type="file" placeholder=""></Input>
+                            </div>
+                            <div class="checkbox">
+                                <p>Areas of Interest for Career Development</p>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label>Skill Enhancement</label> <br>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label>Networking Opportunities</label> <br>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label> Career Advancement Strategiest</label> <br>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label> Industry-specific Training</label> <br>
+                                <label>Other (please specify):</label> <br>
+                                <textarea type="text" placeholder=""></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="details ID">
+
+                        <div class="buttons">
+                            <div class="backBtn">
+                                <span class="btnText">Back</span>
+                            </div>
+
+                            <!-- Finish Button -->
+                            <button onclick="showPopup()" class="finishBtn">
+                                <span class="btnText">Submit</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="details Expectations">
+                    <span class="title">Expectations from CareerCatalyst</span>
+                    <div class="fields">
+                        <div class="input-field checkbox">
+                            <label>What do you hope to gain from CareerCatalyst?</label> <br>
+                            <textarea type="text" placeholder=""></textarea>
+                        </div>
+                        <div class="input-field checkbox">
+                            <label>How do you believe CareerCatalyst can help you achieve your career goals?</label>
+                            <br>
+                            <textarea type="text" placeholder=""></textarea>
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <span class="btnText">Back</span>
+                        </div>
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                        </button>
+                    </div>
+                </div>
+        </div>
+
+        <!-- Thank PopUp -->
+        <div class="Thanks-popup">
+            <img src="images/tick.png" alt="tick image">
+            <h2>Thanks</h2>
+            <p>Your details has been successfully submitted. Thanks</p>
+            <button onclick="hidePopup()" class="OkBtn">
+                <span class="btnText">Ok</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Nav Bar  -->
+    <header>
+        <a href="index.html">
+            <img class="logo-image" src="images/logo-no-background.png" alt="CareerCatalyst Africa Logo" /></a>
+        <nav class="nav-bar">
+            <ul class="sidebar">
+                <li onclick="hideSidebar()">
+                    <a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                                fill="#eef0f2" />
+                        </svg></a>
+                </li>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="whoWeAre.html"> Who We Are</a></li>
+                <li><a href="whatwedo.html"> What We Do</a></li>
+                <li><a href="event.html"> Event and Training</a></li>
+                <li>
+                    <a href="howToSupport.html"> How to support</a>
+                </li>
+                <li>
+                    <button onclick="showReg()" class="reg-button">Register</button>
+                </li>
+            </ul>
+
+            <!-- Large screen Nav bar -->
+            <ul class="nav-links">
+                <li class="hideOnMobile"><a href="index.html"> Home</a></li>
+                <li class="hideOnMobile"><a href="whoWeAre.html"> Who We Are</a></li>
+                <li class="hideOnMobile"><a href="whatwedo.html"> What We Do</a></li>
+                <li class="hideOnMobile"><a href="event.html"> Event and Training</a></li>
+                <li class="hideOnMobile">
+                    <a href="howToSupport.html"> How to support</a>
+                </li>
+                <li class="hideOnMobile">
+                    <button onclick="showReg()" class="reg-button">Register</button>
+                </li>
+                <li class="menu-button" onclick="showSidebar()">
+                    <a href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"
+                                fill="#eef0f2" />
+                        </svg></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Div -->
+    <div class="hero-div">
+        <img class="hero-banner" src="images/image4.jpg" alt="banner image">
+        <div class="overlay"></div>
+        <div class="hero-inner-div">
+            <h3>Event and Trainings</h3>
+            <p>Search for past trainings, Upcoming events, workshops, and training sessions</p>
+            <form action="" class="form">
+                <div class="search-input">
+                    <input type="text" class="input" placeholder="events and training" />
+                    <button class="search-button">Search</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+    <div class="background">
+
+
+        <!-- Container Div -->
+        <div class="event-container">
+            <div class="cards-bkg">
+                <div class="event-info">
+
+                    <!-- Embedded Youtube Video -->
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/ekQI_WpD3qc?si=MYTXkdnjLCa7s3jc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+
+                    <!-- Video Information Cards -->
+                    <div class="event-cards">
+                        <p>March 15, 2024</p>
+                        <h3>"Unlock Your Potential: Career Development Strategies for Success"</h3>
+                        <h5>Join us for an interactive workshop designed to help you unlock your potential and develop
+                            essential skills for career success. Learn practical strategies, network with industry
+                            professionals, and take the next step towards achieving your career goals.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+
+                    <!-- Embedded Youtube Video  -->
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/QBkk8-70rNQ?si=bCG_t3j9LXjzWUDB"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+
+                    <!-- Video information Card -->
+                    <div class="event-cards">
+                        <p>April 5-7, 2024</p>
+                        <h3>"Mastering a Second Language: Intensive Proficiency Course"</h3>
+                        <h5>Enhance your language skills with our intensive course designed to boost proficiency in a
+                            second
+                            language. Taught by experienced instructors, this course covers essential grammar,
+                            vocabulary,
+                            and communication strategies to help you become fluent and confident.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/luk8LrB9Prw?si=BG90VvZrAB4yJ_p3"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>May 10, 2024</p>
+                        <h3>"Connecting Talents Across Borders: Networking Mixer"</h3>
+                        <h5>Network with professionals, mentors, and fellow community members in a casual and friendly
+                            environment. Expand your connections, exchange insights, and discover new opportunities for
+                            collaboration and career advancement.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/8-kkwptkbmk?si=H7NhnUci13XM6nvc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>June 20-21, 2024</p>
+                        <h3>"Empowering Leaders: Leadership Development Seminar"</h3>
+                        <h5>Develop essential leadership skills and strategies to inspire and motivate others. Learn
+                            effective communication, decision-making, and team-building techniques to lead with
+                            confidence
+                            and drive positive change in your organization.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/r4_qN5LQv9c?si=HftYVJfAZYENpqNB"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>July 15, 2024</p>
+                        <h3>"Explore Opportunities: Career Fair 2024"</h3>
+                        <h5>Discover a wide range of job opportunities and connect with leading employers from various
+                            industries. Bring your resume, meet recruiters, and take the next step in your career
+                            journey at
+                            our Career Fair.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/Fda1MRPu1uk?si=Uva_Kl3x6sgFvDnK"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>August 8-9, 2024</p>
+                        <h3>"Digital Marketing Essentials: Workshop for Success"</h3>
+                        <h5>Dive into the world of digital marketing with our hands-on workshop. Learn about social
+                            media
+                            marketing, SEO, content creation, and more. Gain practical skills and insights to create
+                            effective digital marketing campaigns and boost your online presence.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/BJ-nznWwaiw?si=8mMBtF_OhKNBQtV7"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>September 12, 2024</p>
+                        <h3>"Financial Wellness: Planning for a Secure Future"</h3>
+                        <h5>Take control of your financial future with our comprehensive seminar. Learn about budgeting,
+                            saving, investing, retirement planning, and more. Gain valuable insights and practical tips
+                            to
+                            achieve financial security and peace of mind.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" class="play-video" width="100%"
+                            height="315" src="https://www.youtube.com/embed/ay6syGUdu1U?si=FPRB11eS_AGUKAT3"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>October 18-20, 2024</p>
+                        <h3>"Embracing Diversity: Panel Discussion and Dialogue"</h3>
+                        <h5>Join us for an insightful panel discussion on the importance of diversity and inclusion in
+                            the
+                            workplace. Hear from industry experts, share experiences, and explore strategies for
+                            fostering a
+                            diverse and inclusive work environment.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/Py12BZLHi5k?si=AVxHUd10Fgn5S6Pr"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>November 8, 2024</p>
+                        <h3>"Mastering Project Management: Bootcamp for Success"</h3>
+                        <h5>Equip yourself with essential project management skills and methodologies in this intensive
+                            bootcamp. Learn how to initiate, plan, execute, monitor, and close projects successfully,
+                            ensuring timely delivery and stakeholder satisfaction.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/1JBe5Aa0wpw?si=B1EdFoZjXNqaiRHy"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>December 5-6, 2024</p>
+                        <h3> "Breaking Barriers: Women in Leadership Symposium"</h3>
+                        <h5> Celebrate and empower women leaders in this inspiring symposium. Hear from accomplished
+                            female
+                            leaders, participate in discussions on gender equality and leadership development, and
+                            network
+                            with like-minded professionals.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/r0lMuFq_3m8?si=RxqzQ8gL08JEFAM2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>January 20-22, 2025</p>
+                        <h3>"Mind, Body, Soul: Wellness Retreat 2025"</h3>
+                        <h5>Take a break from the hustle and bustle and embark on a journey of self-discovery and
+                            rejuvenation. Join us for a wellness retreat focused on holistic health and well-being.
+                            Experience yoga, meditation, nature walks, and nourishing meals to recharge and renew.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="cards-bkg">
+                <div class="event-info">
+                    <div class="embedded-video-container"><iframe class="play-video" width="100%" height="315"
+                            src="https://www.youtube.com/embed/abEpDJSjf0E?si=2DpbqdTT9ATlnang"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe></div>
+                    <div class="event-cards">
+                        <p>February 10-28, 2025</p>
+                        <h3>"Elevate Your Career: Professional Development Webinar Series"</h3>
+                        <h5>Enhance your skills and knowledge with our series of professional development webinars.
+                            Covering
+                            topics such as communication, time management, negotiation, and more, these sessions are
+                            designed to help you excel in your career and achieve your goals.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div>
+</body>
+
+<!-- Footer -->
+<footer>
+    <div class="footer-div">
+        <div class="footer-card card2">
+            <img class="footer-logo" src="images/logo-no-background.png" alt="careercatalyst image" />
+            <p>
+                Subscribe to our newsletter for the latest news, events, and
+                opportunities.
+            </p>
+
+            <h5>Business Collaboration and Sponsorship</h5>
+            <p>Explore partnership opportunities with CareerCatalyst Africa.</p>
+            <p>
+                Support our initiatives through sponsorship.
+                <a href="whatwedo.html"><em>Learn More</em></a>
+            </p>
+        </div>
+
+        <!-- Contact Card -->
+        <div class="footer-card card3">
+            <h5>Contact Us</h5>
+            <p><strong>CareerCatalyst Africa</strong></p>
+            <p>123 Main Street Cityville, ABC 12345 Countryland</p>
+            <p>+1 (555) 123-4567</p>
+            <p>info@career-catalyst-africa.org</p>
+        </div>
+        <div class="footer-card links">
+            <h5>Links</h5>
+            <a href="index.html">Home</a>
+            <a href="whoWeAre.html">Who we are</a>
+            <a href="whatwedo.html">What we do</a>
+            <a href="event.html">Event & Training</a>
+            <a href="howToSupport.html">How to Support</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms of Service</a>
+
+        </div>
+        <!-- NewsLetter -->
+        <div class="footer-card">
+            <form action="" class="form">
+                <h5 class="subscribe">Newsletter</h5>
+                <div class="subscribe-input">
+                    <input type="email" class="input" placeholder="info@careercatalyst.org" />
+                    <button class="footer-button">Subscribe</button>
+                </div>
+            </form>
+
+            <!-- Social Media -->
+            <div class="social-media-div">
+                <div class="social-media"><img class="social-media-icon" src="images/facebook-f.svg" alt="facebook" />
+                </div>
+                <div class="social-media"> <img class="social-media-icon" src="images/instagram.svg" alt="instagram" />
+                </div>
+                <div class="social-media"> <img class="social-media-icon" src="images/x-twitter.svg" alt="twitter" />
+                </div>
+                <div class="social-media"> <img class="social-media-icon" src="images/linkedin-in.svg" alt="linkedin" />
+                </div>
+                <div class="social-media"> <img class="social-media-icon" src="images/whatsapp.svg" alt="whatsapp" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Javascript Tag -->
+    <script src="script/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</footer>
+
+</html>

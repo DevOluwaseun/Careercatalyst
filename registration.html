@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel=”stylesheet” href=”https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css”>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;600;700&family=Nunito+Sans:opsz@6..12&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="reg-form">
+        <div class="reg-container">
+            <div class="reg-header-div">
+                <header>Registration
+                    <a onclick="hideReg()" class="reg-close-btn" href="#"><svg xmlns="http://www.w3.org/2000/svg"
+                            height="24" viewBox="0 -960 960 960" width="24">
+                            <path
+                                d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"
+                                fill="#13293d" />
+                        </svg></a>
+                </header>
+
+            </div>
+            <form action="#">
+                <div class="form first">
+                    <div class="details personal">
+                        <span class="title">Personal Details</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Full Name</label>
+                                <Input type="text" placeholder="Enter your name" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Date of Birth</label>
+                                <Input type="date" placeholder="Enter your name" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Email</label>
+                                <Input type="text" placeholder="Enter your name" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Mobile Number</label>
+                                <Input type="number" placeholder="Enter mobile number" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Gender</label>
+                                <Input type="date" placeholder="Gender" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Nationality</label>
+                                <Input type="text" placeholder="Enter your Nationality" required></Input>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="details ID">
+                        <span class="title">Professional Information</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Current Job Title</label>
+                                <Input type="text" placeholder="Enter your current Job Title" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Current Company/Organization</label>
+                                <Input type="text" placeholder="Enter your current company/organization"
+                                    required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Years of Experience</label>
+                                <Input type="number" placeholder="Enter your years of experience" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Industry</label>
+                                <Input type="text" placeholder="Industry" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Highest Education Level</label>
+                                <Input type="text" placeholder="Level of Education" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Area of Expertise</label>
+                                <Input type="text" placeholder="Enter your specialization" required></Input>
+                            </div>
+                            <button class="nextBtn">
+                                <span class="btnText">Next</span>
+
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="form second">
+                    <div class="details personal">
+                        <span class="title">Career Goals</span>
+                        <div class="fields">
+                            <div class="input-field">
+                                <label>Short-term Career Goals</label>
+                                <Input type="text" placeholder="" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>Long-term Career Goals</label>
+                                <Input type="text" placeholder="" required></Input>
+                            </div>
+                            <div class="input-field">
+                                <label>CV/Resume</label>
+                                <Input type="file" placeholder="" required></Input>
+                            </div>
+                            <div class="checkbox">
+                                <p>Areas of Interest for Career Development</p>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label>Leadership Development</label> <br>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label>Skill Enhancement</label> <br>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label>Networking Opportunities</label> <br>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label> Career Advancement Strategiest</label> <br>
+                                <Input type="checkbox" placeholder=""></Input>
+                                <label> Industry-specific Training</label> <br>
+                                <label>Other (please specify):</label> <br>
+                                <textarea type="text" placeholder=""></textarea>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <div class="details ID">
+
+                        <div class="buttons">
+                            <div class="backBtn">
+                                <span class="btnText">Back</span>
+                            </div>
+                            <button class="FinishBtn">
+                                <span class="btnText">Finish</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="details Expectations">
+                    <span class="title">Expectations from CareerCatalyst</span>
+                    <div class="fields">
+                        <div class="input-field checkbox">
+                            <label>What do you hope to gain from CareerCatalyst?</label> <br>
+                            <textarea type="text" placeholder=""></textarea>
+                        </div>
+                        <div class="input-field checkbox">
+                            <label>How do you believe CareerCatalyst can help you achieve your career goals?</label>
+                            <br>
+                            <textarea type="text" placeholder=""></textarea>
+                        </div>
+
+
+                    </div>
+                    <div class="buttons">
+                        <div class="backBtn">
+                            <span class="btnText">Back</span>
+                        </div>
+                        <button class="nextBtn">
+                            <span class="btnText">Next</span>
+                        </button>
+                    </div>
+                </div>
+        </div>
+        </form>
+
+    </div>
+
+</body>
+<script src="script/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+
+</html>
